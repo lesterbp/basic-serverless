@@ -1,0 +1,23 @@
+{
+  "name": "basic-serverless",
+  "version": "1.0.0",
+  "description": "basic serverless setup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lesterbp/basic-serverless.git"
+  },
+  "author": "Lester Prudente",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lesterbp/basic-serverless/issues"
+  },
+  "homepage": "https://github.com/lesterbp/basic-serverless#readme",
+  "devDependencies": {
+    "serverless": "^1.32.0",
+    "serverless-offline": "^3.28.1"
+  }
+}
