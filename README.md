@@ -7,11 +7,6 @@ Copy `.env.template` and rename the copy to `.env` fill it up with the necessary
 # requirements
 You will only need `docker` to use or develop. Everything will run inside docker and all of the project files will be mounted inside it.
 
-# running shell
-`make shell` or `docker-compose run --rm serverless`
-
-This will run a shell inside a docker container and install dependencies in the container. It will let you do all commands that is listed below inside the container.
-
 # deploying to AWS
 `make deploy`
 
@@ -25,4 +20,9 @@ This will remove everthing that had been deployed to AWS. Be sure that you still
 # running offline
 `make offline`
 
-You may run this command without being inside the docker container (make shell). This will run a new container and run the serverless app offline which is useful while developing.
+This assumes you have already installed your project dependencies. If you have not done it yet or if you have updates to your npm packages then you'll need to do `make deps` first.
+
+# running a shell
+`make shell`
+
+This will run a shell inside a Node.js docker container. Useful when you need to install new project dependencies/packages or run other Node related stuff.

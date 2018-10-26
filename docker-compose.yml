@@ -6,7 +6,3 @@ services:
     volumes:
       - .:/opt/app
     working_dir: /opt/app
-    command: >
-      sh -c "apk add make
-      && make deps
-      && sh"
