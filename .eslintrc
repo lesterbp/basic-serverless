@@ -1,0 +1,15 @@
+globals:
+    exports: true
+extends: 'airbnb-base'
+rules:
+  indent:
+    - error
+    - 2
+  linebreak-style:
+    - error
+    - unix
+  quotes:
+    - 0
+    - single
+  semi:
+    - error
